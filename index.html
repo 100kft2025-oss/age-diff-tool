@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Age Difference Calculator | उम्र में अंतर जानें (Free Tool)</title>
+
+  <!-- SEO Meta -->
+  <meta name="description" content="Free Age Difference Calculator - दो जन्मतिथियों के बीच उसकी सही उम्र का अंतर (वर्ष, महीने, दिन और कुल दिन). मोबाइल-फ्रेंडली और तुरंत परिणाम।" />
+  <meta name="keywords" content="age difference calculator, उम्र में अंतर, age calculator, days between dates, date diff" />
+  <meta name="robots" content="index, follow" />
+
+  <!-- Open Graph (Social preview) -->
+  <meta property="og:title" content="Age Difference Calculator - उम्र में अंतर जानें" />
+  <meta property="og:description" content="दो तारीखों के बीच का सटीक अंतर (वर्ष, महीने, दिन और कुल दिन). Free, तेज और मोबाइल-फ्रेंडली." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://yourname.netlify.app/" />
+  <meta property="og:image" content="https://yourname.netlify.app/preview.png" />
+
+  <!-- JSON-LD structured data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebApplication",
+    "name": "Age Difference Calculator",
+    "url": "https://yourname.netlify.app/",
+    "description": "Free Age Difference Calculator - दो तारीखों के बीच का अंतर साल, महीने, दिन और कुल दिनों में दिखाता है.",
+    "applicationCategory": "Tool",
+    "operatingSystem": "All",
+    "offers": {
+      "@type": "Offer",
+      "price": "0",
+      "priceCurrency": "INR"
+    }
+  }
+  </script>
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main class="container" role="main">
+    <h1>Age Difference Calculator</h1>
+    <p class="sub">दो तारीखें डालें और उनका सटीक अंतर जानें — <strong>वर्ष, महीने, दिन</strong> और <strong>कुल दिन</strong>.</p>
+
+    <form id="diffForm" onsubmit="event.preventDefault(); calculateDiff();">
+      <div class="row">
+        <label for="date1">पहली तारीख (DD/MM/YYYY):</label>
+        <input id="date1" type="date" required />
+      </div>
+
+      <div class="row">
+        <label for="date2">दूसरी तारीख (DD/MM/YYYY):</label>
+        <input id="date2" type="date" required />
+      </div>
+
+      <div class="row">
+        <button type="submit">Calculate Difference</button>
+        <button type="button" class="muted" onclick="swapDates()">Swap Dates</button>
+        <button type="button" class="muted" onclick="clearAll()">Clear</button>
+      </div>
+    </form>
+
+    <section id="result" aria-live="polite"></section>
+
+    <footer class="footer">
+      <small>Free Tool • Share with friends • Built for students</small>
+    </footer>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
