@@ -1,0 +1,77 @@
+/* Basic reset */
+* { box-sizing: border-box; margin: 0; padding: 0; }
+html,body { height: 100%; }
+
+body {
+  font-family: "Segoe UI", Roboto, Arial, sans-serif;
+  background: linear-gradient(180deg,#eef3ff 0%,#ffffff 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 24px;
+  color: #0f172a;
+}
+
+.container {
+  width: 100%;
+  max-width: 720px;
+  background: #fff;
+  padding: 22px;
+  border-radius: 12px;
+  box-shadow: 0 8px 30px rgba(16,24,40,0.08);
+}
+
+h1 { font-size: 22px; margin-bottom: 6px; }
+.sub { color: #334155; margin-bottom: 16px; font-size: 14px; }
+
+.row { margin-bottom: 12px; display: flex; flex-direction: column; }
+label { font-weight: 600; font-size: 13px; margin-bottom: 6px; color:#0f172a; }
+input[type="date"] {
+  padding: 10px 12px;
+  border: 1px solid #d1d5db;
+  border-radius: 8px;
+  font-size: 15px;
+  background: #f8fafc;
+}
+
+button {
+  padding: 10px 14px;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  font-weight: 700;
+  font-size: 14px;
+  background: #2563eb;
+  color: #fff;
+}
+
+button.muted {
+  background: #eef2ff;
+  color: #0f172a;
+  margin-left: 8px;
+  font-weight: 600;
+}
+
+.row button { width: 100%; }
+.row { gap: 8px; }
+
+@media(min-width:640px) {
+  .row { flex-direction: row; align-items: center; }
+  .row label { width: 220px; margin-bottom: 0; }
+  .row input { flex: 1; }
+  .row button { width: auto; }
+}
+
+#result {
+  margin-top: 18px;
+  padding: 14px;
+  background: #f8fafc;
+  border-radius: 10px;
+  border: 1px solid #e6eefc;
+  min-height: 60px;
+  font-size: 16px;
+  line-height: 1.45;
+  color: #0f172a;
+}
+
+.footer { margin-top: 14px; text-align: center; color: #475569; font-size: 13px; }
